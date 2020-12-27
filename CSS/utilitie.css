@@ -1,0 +1,148 @@
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.text-primary{
+    color: #28a745;
+}
+/*button and background*/
+.btn{
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+.btn-primary,
+.bg-primary{
+    background-color: #28a745;
+    color: #fff;
+}
+.btn-secondary,
+.bg-secondary{
+    background-color: #0284d0;
+    color: #fff;
+}
+.btn-light,
+.bg-light{
+    background-color: #f4f4f4;
+    color: #333;
+}
+.btn-dark,
+.bg-dark{
+    background-color: #333;
+    color: #fff;
+}
+.btn-outline{
+    background: transparent;
+    border: 2px solid #fff;
+}
+.btn-light:hover{
+    background-color: #28a745;
+    opacity: 0.9;
+}
+.btn-secondary:hover{
+    opacity: 0.9;
+}
+/*flex-column*/
+.flex-column{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.flex-column .column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+.flex-column .column .column1,
+.flex-column .column .column2{
+    height: 100%;
+}
+.flex-column .column2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.flex-column .column img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.flex-column .column2 {
+    padding: 30px;
+    line-height: 1.6;
+}
+.flex-column h2 {
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.flex-column h4 {
+    margin-bottom: 10px;
+}
+
+.flex-column p {
+    margin: 20px 0;
+}
+/*text*/
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+.text h4{
+    padding: 25px 0;
+}
+.text h2{
+    padding-bottom: 25px;
+    font-size: 30px;
+    
+}
+.text p{
+    padding-bottom: 25px;
+}
+/*footer*/
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 40px;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+.social a{
+    padding: 20px;
+}
+.social .social-icon a:hover{
+    color:#28a745;
+}
+footer .social-content{
+    text-align: center;
+    padding-bottom: 50px;
+}
+@media(max-width:768px){
+    .flex-column{
+        flex-direction: column;
+    }
+    .blog .reverse{
+        flex-direction: column-reverse;
+    }
+}

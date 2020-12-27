@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <body style="overflow-x: hidden;">
+        <head id="post">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+            <link rel="stylesheet" href="CSS/lightbox.min.css">
+            <link rel="stylesheet" href="CSS/style.css">
+            <link rel="stylesheet" href="CSS/utilitie.css">
+            <title>Blog Post</title>
+        </head>
+        <header>
+            <div id="post-Home">
+            <div id="navbar" class="navbar top">
+                <div class="logo">
+                    <h1><span class="text-primary">Edge</span> Ledger</h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#About">About</a></li>
+                        <li><a href="index.html#Cases">Cases</a></li>
+                        <li><a href="index.html#Blog">Blog</a></li>
+                        <li><a href="index.html#Cotact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </header>
+        <div class="post-content">
+            <div class="post-main">
+            <h2>Blog Post One</h2>
+            <p style="padding-bottom: 30px;">
+            <i class="fas fa-user"></i>
+            Posted by <strong>John Doe</strong> | April 19 2020</p>
+            </div>
+            <div class="post-img">
+                <div class="post-image">
+                <img src="./images/blog/blog1.jpg">
+                </div>
+            </div>
+            <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+            rerum neque? Odit sapiente tempore cum tenetur voluptatum dolorum fuga 
+            nesciunt. Voluptate iure eum animi accusamus? Quod quae doloremque asperiores 
+            fugit repudiandae dolores, praesentium ad nisi exercitationem porro repellendus 
+            totam vero libero! Repudiandae sed, dolorem vero nemo neque error. Ullam veniam 
+            pariatur ducimus earum natus, ratione fugiat officia voluptatibus, voluptas delectus 
+            molestiae tenetur dolore repudiandae quos esse, sit possimus! Esse, placeat sit? 
+            Laborum, porro voluptatem! Harum, animi nam eaque quo voluptas tempore facere recusandae
+            deleniti? Veniam consequuntur, sit dolorem quia reprehenderit ipsum, est modi minus magnam 
+            officiis maxime quam assumenda tenetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium iste voluptas aut 
+            facere accusamus blanditiis nisi alias. Tenetur, deleniti maiores!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur maxime eum quod
+             dolore distinctio voluptas nobis voluptatem ducimus, facere officiis explicabo! Eligendi,
+             ut amet sed unde voluptate cumque perspiciatis labore.</p>
+            </div>
+            
+        </div>
+        <footer class="bg-dark">
+            <div class="social">
+                <a href="#Home"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#Home"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#Home"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="#Home"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+            <div class="social-content">
+              <p>Copyright &copy; 2020 - EdgeLedger</p>
+            </div>
+        </footer>
+        <script>
+             const navbar=document.getElementById("navbar");
+       let scrolled=false;
+       window.onscroll=function(){
+           if(window.pageYOffset>100)
+           {
+               navbar.classList.remove("top");
+               if(!scrolled)
+               {
+                   navbar.style.transform="translateY(-70px)";
+               }
+               setTimeout(function(){
+                navbar.style.transform = 'translateY(0)';
+                scrolled = true;
+               },200);
+           }
+           else{
+               navbar.classList.add("top");
+               scrolled=false;
+           }
+       };
+        </script>
+    </body>
+</html>
